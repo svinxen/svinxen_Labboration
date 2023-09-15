@@ -2,139 +2,105 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Här börjar Header designen, alltså topp-menyn */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 100;
-}
-
-.flex {
-    display: flex;
-    align-items: center;  
-}
-
-.container {
-        max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.navbar{
-    justify-content: space-between
-}
-
-/* Detta tar bort punkterna som hamnar framför länkarna om man inte ändrar style til 'none' */
-.nav-links {
-    gap: 20px;
-    list-style: none;
-}
-.navbar a{
-    padding: 20px 0;
-    display: inline-block;
-    color: white;
     text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s;
 }
 
-/* Detta ändrar färgen när man håller över länken i Header */
-.navbar a:hover {
-    color: #ddd;
+/* Variabler CSS */
+:root{
+    --header-height: 3rem;
+    --font-medium: 500;
 }
-/* Här slutar Header designen */
 
-/* Home page design */
-.homepage {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: url("Images/background-homepage.jpg");
-    background-position: center;
-    background-size: cover;
+/* Färger */
+:root{
+    --first-color: blue;
+    --white-color: #FAFAFA;
+    --dark-color: rgb(36, 36, 36);
+    --text-color: gray;
+}
+
+/* Fonts och storlek */
+:root{
+    --body-font: "Gill Sans", sans-serif;
+    --body-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem; /* Kan  skriva  ".8rem", men tycker det är lätare att förstå om man skriver ut 0 */
+}
+@media screen and (min-width:768px) {
+    :root{
+    --body-font-size: 10.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.9rem;
     }
+ }
 
-.homepage .content {
+ /* Margins / Mariginaler */
+:root{
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
+/* z index */
+:root{
+    --z-fixed: 100;
+}
+
+/* Base */
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+h1,h2{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Tar bort prickar framför */
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CSS Classes */
+.section{
+    padding: 3rem 0;
+}
+.section-title{
     position: relative;
-    height: 85%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.homepage .text {
-    color: white;
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4) 0;
     text-align: center;
 }
-
-.homepage .text h1 {
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 0px; /*Eventuellt mellanrum under rubriken*/
-}
-
-.homepage a {
-    color: #333;
-    background: #fff;
-    margin-top: 20px; /*Mellanrum över "knappen" */
-    padding: 8px 20px; /*Mellanrum från länken till kanterna på knappen*/
-    border-radius: 6px;
-    border: 2px solid #fff;
-    box-shadow: rgba(0, 0, 0, 0.4);
-    font-size: 0.9rem;
-    transition: 0.2s;
-}
-
-.homepage a:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.4);
-}
-/* Slut på Home Page Design */
-
-/* Atlas */
-section {
-    padding-top: 80px;
-    background-color: rgba(0, 0, 0, 0.04);
-
-}
-
-.section-title {
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 2rem;
-}
-
-section .cards {
-    margin-top: 50px;
-}
-
-section .card {
-    width: calc(100% - 30px);
-    text-align: center;
-    list-style: none;
-    background-color: #fff;
-    padding: 40px 15px;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
-}
-
-section .card img {
-    height: 420px;
-    width: 420px;
-    border-radius: 50%;
-    margin-bottom: 50px;
-}
-
-section .card p {
-    font-size: 0.9rem;
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
 }

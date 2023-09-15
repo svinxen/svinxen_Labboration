@@ -4,57 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS LÄNK-->
     <link rel="stylesheet" href="/Styling/style.css" />
+<!-- Iconer importerande fårn boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Me & My Dogs</title>
 </head>
 <body>
-<!--Här börjar är min Header, detta är alltså navigerings menyn ni ser högst upp -->    
-<header>
-    <nav class="navbar container flex">
-        <h2 class="logo"><a href="#">LOGO</a></h2>
-            <ul class="nav-links flex">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Atlas">Atlas</a></li>
-            <li><a href="#Bonnie">Bonnie</a></li>
-            <li><a href="#Mia">Mia</a></li>
-            <li><a href="#Ann">About Me</a></li>
+<!-- HEADER - START -->
+<header class="l-header">
+    <nav class="nav" bd-grid>
+        <div>
+            <a href="#" class="nav_logo">Mina Hundar</a>
+        </div>
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link">Start</a></li>
+                <li class="nav_item"><a href="Atlas.html" class="nav_link">Atlas</a></li>
+                <li class="nav_item"><a href="Bonnie.html" class="nav_link">Bonnie</a></li>
+                <li class="nav_item"><a href="Mia.html" class="nav_link">Mia</a></li>
+                <li class="nav_item"><a href="Ann.html" class="nav_link">Om</a></li>
             </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
     </nav>
 </header>
-<!--Här slutar är min Header -->  
 
-<!-- Här börjar min Home pages-->
-    <section class="homepage"  id="home">
-        <div class="content flex">
-            <div class="text">
-                <h1> Home Page</h1>
-                <p> text text TEXT TEXT Text Text</p>
-            </div>
-        <a href="Atlas.html">Let's check them out</a>
-        </div>
-    </section>
-<!-- Här avslutas min Home page-->
+<main class="l-main">
+        
+</main>
+<!-- HEADER - SLUT -->
 
-<!-- Atlas Sida -->
-<section class="services" id="atlas">
-    <div class="container">
-        <div class="section-title">
-            <h2>Atlas</h2>
-            <p> text text TEXT TEXT Text Text</p>
-        </div>
+<!-- FOOTER - START -->
+<!-- FOOTER - SLUT -->
 
-        <ul class="cards flex">
-            <li class="card">
-                <img src="/Styling/Images/Atlas.jpg" alt="Atlas">
-                <h3>Om Atlas</h3>
-                <p> text text TEXT TEXT Text Text</p>
-            </li>
-        </ul>
+<!-- Importerat JavaScript bibliotek för animationer vid scrollning -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-    </div>
-</section>
-
-
-
+<!-- JavaScript LÄNK-->
+    <script src="/JavaScript/myScript.js"></script>
 </body>
 </html>
