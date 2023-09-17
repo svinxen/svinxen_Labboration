@@ -1,51 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS LÄNK-->
-    <link rel="stylesheet" href="/Styling/style.css" />
-<!-- Iconer importerande fårn boxicons -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- CSS LÄNK -->
+<link rel="stylesheet" href="/Styling/style.css">
+
+<!-- REMIX ICONS-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- FAVVICON -->
+<link rel="icon" href="/Styling/Images/paw-favicon.png">
 
     <title>Me & My Dogs</title>
 </head>
 <body>
-<!-- HEADER - START -->
-<header class="l-header">
-    <nav class="nav" bd-grid>
-        <div>
-            <a href="#" class="nav_logo">Mina Hundar</a>
-        </div>
-        <div class="nav_menu" id="nav-menu">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">Start</a></li>
-                <li class="nav_item"><a href="Atlas.html" class="nav_link">Atlas</a></li>
-                <li class="nav_item"><a href="Bonnie.html" class="nav_link">Bonnie</a></li>
-                <li class="nav_item"><a href="Mia.html" class="nav_link">Mia</a></li>
-                <li class="nav_item"><a href="Ann.html" class="nav_link">Om</a></li>
-            </ul>
-        </div>
 
-        <div class="nav_toggle" id="nav-toggle">
-            <i class='bx bx-menu-alt-right'></i>
+<!-- HEADER STARTAR-->    
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="/Pages/index.html" class="nav__logo">
+            Travel
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/Pages/Atlas.html" class="av__link">Atlas</a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="/Pages/Bonnie.html" class="av__link">Bonnie</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/Pages/Mia.html" class="av__link">Mia</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/Pages/Ann.html" class="av__link">About Me</a>
+                </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-fill"></i> <!-- Kryss icon från Remix Icons-->
         </div>
+    </div>
+    <!-- Toggle -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-fill"></i> <!-- Meny icon från Remix Icons-->
+    </div>
     </nav>
 </header>
+    
+<!-- MAIN -->
+<main class="main">
+        <!-- HOME -->
+    <section class="home section" id="home">
+        <img src="/Styling/Images/background-homepage.jpg" alt="home image" class="home__bg">
+        <div class="home__shadow"></div>
 
-<main class="l-main">
-        
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h3 class="home_subtitle">
+                    Me & My Dogs
+                </h3>
+
+                <h1 class="home__title">
+                    My Dogs
+                </h1>
+
+                <p class="home__description">
+                    Något vettingt om mina hundar hej hej.
+                    Något vettingt om mina hundar hej hej.
+                    Något vettingt om mina hundar hej hej.
+                </p>
+
+                <a href="#" class="href button">
+                    Check them out <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="home__cards grid">
+                <article class="home__card">
+                    <img src="/Styling/Images/Atlas.jpg" alt="home image" class="home__card-img">
+                    <h3 class="home__card-title">Atlas</h3>
+                    <div class="home__card-shadow"></div>
+                </article>
+
+                <article class="home__card">
+                    <img src="/Styling/Images/Bonnie.jpg" alt="home image" class="home__card-img">
+                    <h3 class="home__card-title">Bonnie</h3>
+                    <div class="home__card-shadow"></div>
+                </article>
+
+                <article class="home__card">
+                    <img src="/Styling/Images/Mia.png" alt="home image" class="home__card-img">
+                    <h3 class="home__card-title">Mia</h3>
+                    <div class="home__card-shadow"></div>
+                </article>
+
+                <article class="home__card">
+                    <img src="/Styling/Images/MeAnn.png" alt="home image" class="home__card-img">
+                    <h3 class="home__card-title">Me, Ann</h3>
+                    <div class="home__card-shadow"></div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+
 </main>
-<!-- HEADER - SLUT -->
 
-<!-- FOOTER - START -->
-<!-- FOOTER - SLUT -->
-
-<!-- Importerat JavaScript bibliotek för animationer vid scrollning -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<!-- JavaScript LÄNK-->
-    <script src="/JavaScript/myScript.js"></script>
+<!-- JAVASCRIPT LÄNK -->    
+<script src="/JavaScript/myScript.js"></script>
 </body>
 </html>
