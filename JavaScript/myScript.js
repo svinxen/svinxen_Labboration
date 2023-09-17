@@ -25,3 +25,13 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click0', linkAction))
+
+
+/* BLUR FOR HEADER */
+const blurHeader = () =>{
+    const header = document.getElementById('header')
+    /* När man ser 50% eller mindre av headern */
+    this.scrollY >= 50 ? header.classList.add('blur-header')
+                      : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
