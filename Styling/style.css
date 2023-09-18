@@ -354,11 +354,6 @@
  .pack__description {
    margin-bottom: 2rem;
  }
-
- .pack__description-me {
-    margin-bottom: 2rem;
-    font-style: var(--text-color-dark);
-  } 
  
  .pack__image {
    position: relative;
