@@ -4,19 +4,19 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
+      <!--FAVICON, TASS FRAMFÖR TAB NAMNET-->
       <link rel="shortcut icon" href="/Styling/Images/paw-favicon.png">
 
-      <!--=============== REMIXICONS ===============-->
+      <!-- IMPORTERADE REMIXICONS, EX FÖR PILAR-->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-      <!--=============== CSS ===============-->
+      <!-- CSS LÄNK-->
       <link rel="stylesheet" href="/Styling/style.css">
 
       <title>Me & The Dogs</title>
    </head>
    <body>
-      <!--==================== HEADER ====================-->
+<!-- HEADER - START -->
       <header class="header" id="header">
          <nav class="nav container">
             <a href="/Pages/index.html" class="nav__logo">Me & The Dogs</a>
@@ -40,22 +40,21 @@
                   </li>
                </ul>
 
-               <!-- Close button -->
+               <!-- CLOSE MENU BUTTON - SMALL SCREEN -->
                <div class="nav__close" id="nav-close">
                   <i class="ri-close-line"></i>
                </div>
             </div>
 
-            <!-- Toggle button -->
+            <!-- OPEN MENU BUTTOON - SMALL SCREEN -->
             <div class="nav__toggle" id="nav-toggle">
                <i class="ri-menu-line"></i>
             </div>
          </nav>
       </header>
+<!-- HEADER - SLUT -->
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
+<!-- HOME PAGE - START -->
          <section class="home section" id="home">
             <img src="/Styling/Images/background-homepage.jpg" alt="home image" class="home__bg">
             <div class="home__shadow"></div>
@@ -80,26 +79,33 @@
                <div class="home__cards grid">
                   <article class="home__card">
                      <img src="/Styling/Images/Atlas.jpg" alt="home image" class="home__card-img">
+                     <a href="/Pages/Atlas.html">
                      <h3 class="home__card-title">Atlas</h3>
+                    </a>
                      <div class="home__card-shadow"></div>
                   </article>
 
                   <article class="home__card">
                      <img src="/Styling/Images/Bonnie.JPG" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Bonnie</h3>
+                     <a href="/Pages/Bonnie.html">
+                        <h3 class="home__card-title">Bonnie</h3>
+                       </a>
                      <div class="home__card-shadow"></div>
                   </article>
 
                   <article class="home__card">
                      <img src="/Styling/Images/Mia.png" alt="home image" class="home__card-img">
-                     <h3 class="home__card-title">Mia</h3>
+                     <a href="/Pages/Mia.html">
+                        <h3 class="home__card-title">Mia</h3>
+                       </a>
                      <div class="home__card-shadow"></div>
                   </article>
                </div>
             </div>
          </section>
+<!-- HOME PAGE - SLUT -->
 
-         <!--==================== ABOUT PACK ====================-->
+<!-- ABOUT THE PACK - START -->
          <section class="pack section" id="pack">
             <div class="pack__container container grid">
                <div class="pack__data">
@@ -113,7 +119,7 @@
                      and a young Siberian Husky who recently got a little Siberian Husky puppy sister.
                   </p>
 
-                  <a href="#about" class="button">
+                  <a href="/Pages/Ann.html" class="button">
                      About Me <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
@@ -124,8 +130,9 @@
                </div>
             </div>
          </section>
+<!-- ABOUT THE PACK - SLUT -->
 
-         <!--==================== POPULAR -  traits====================-->
+<!-- TRAITS - START -->
          <section class="traits section" id="traits">
             <h2 class="section__title">
                This is them, <br>
@@ -171,8 +178,9 @@
                </article>
             </div>
          </section>
-         
-         <!--==================== EXPLORE -  ABOUT ME====================-->
+<!-- TRAITS - SLUT -->         
+
+<!-- ABOUT ME - START -->
          <section class="about section" id="about">
             <div class="about__container">
                <div class="about__image">
@@ -202,10 +210,9 @@
                </div>
             </div>
          </section>
-         
+<!-- ABOUT ME - SLUT -->        
         
-
-      <!--==================== FOOTER ====================-->
+<!-- FOOTER - START -->
       <footer class="footer">
          <div class="footer__container container grid">
             <div class="footer__content grid">
@@ -257,7 +264,7 @@
                   </div>
 
                   <div>
-                     <h3 class="footer__title">Information</h3>
+                     <h3 class="footer__title">Support</h3>
 
                      <ul class="footer__links">
                         <li>
@@ -303,8 +310,10 @@
             </div>
          </div>
       </footer>
+<!-- FOOTER - SLUT -->
 
-      <!--========== SCROLL UP ==========-->
+
+<!-- SCROLL UP ICON (IMPORTERAD FRN REMIXICONS) -->
       <a href="#" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-line"></i>
       </a>
@@ -312,7 +321,7 @@
       <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>
 
-      <!--=============== MAIN JS ===============-->
+<!-- JAVASCRIPT LÄNK -->
       <script src="/JavaScript/myScript.js"></script>
    </body>
 </html>

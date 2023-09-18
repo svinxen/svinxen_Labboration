@@ -5,19 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="/Styling/Images/paw-favicon.png">
-  
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-  
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/Styling/style.css">
+      <!--FAVICON, TASS FRAMFÖR TAB NAMNET-->
+      <link rel="shortcut icon" href="/Styling/Images/paw-favicon.png">
+
+      <!-- IMPORTERADE REMIXICONS, EX FÖR PILAR-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!-- CSS LÄNK-->
+      <link rel="stylesheet" href="/Styling/style.css">
   
         <title>Me & The Dogs - Bonnie</title>
      </head>
      <body>
-        <!--==================== HEADER ====================-->
+<!-- HEADER - START -->
         <header class="header" id="header">
            <nav class="nav container">
               <a href="/Pages/Bonnie.html" class="nav__logo">Bonnie</a>
@@ -29,71 +29,75 @@
                     </li>
   
                     <li class="nav__item">
-                       <a href="#pack" class="nav__link">The Pack</a>
+                       <a href="/Pages/index.html#pack" class="nav__link">The Pack</a>
                     </li>
   
                     <li class="nav__item">
-                       <a href="#traits" class="nav__link">Traits</a>
+                       <a href="/Pages/index.html#traits" class="nav__link">Traits</a>
                     </li>
   
                     <li class="nav__item">
-                       <a href="#about" class="nav__link">About Me</a>
+                       <a href="/Pages/index.html#about" class="nav__link">About Me</a>
                     </li>
                  </ul>
   
-                 <!-- Close button -->
-                 <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                 </div>
-              </div>
-  
-              <!-- Toggle button -->
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line"></i>
-              </div>
-           </nav>
-        </header>
-  
-        <!--==================== MAIN ====================-->
-        <main class="main">
-    
+               <!-- CLOSE MENU BUTTON - SMALL SCREEN -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
 
+            <!-- OPEN MENU BUTTOON - SMALL SCREEN -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+<!-- HEADER - SLUT --> 
 
-  <!--==================== ABOUT PACK ====================-->
-  <section class="pack section" id="pack">
-    <div class="pack__container container grid">
-       <div class="pack__data">
-          <h2 class="section__title">BONNIE</h2>
-
-          <p class="pack__description">
-             This pack currently contains one old introvertet Cavalier King Charles Spaniel/Chihuahua mix
-             and a young Siberian Husky who recently got a little Siberian Husky puppy sister.
-          </p>
-
-          <a href="/Pages/index.html" class="button">
-             Back <i class="ri-arrow-right-line"></i>
-          </a>
+<!--DOG PROFILE PAGE - START -->
+  <section class="about section" id="pack">
+    <div class="about__container">
+       <div class="about__image">
+          <img src="/Styling/Images/Bonnie-background.jpg" alt="about image" class="about__img">
+          <div class="about__shadow"></div>
        </div>
 
-       <div class="pack__image">
-          <img src="/Styling/Images/noPicture.jpg" alt="pack image" class="pack__img">
-          <div class="pack__shadow"></div>
+       <div class="about__content container grid">
+          <div class="about__data">
+             <h2 class="about__title">Bonnie</h2>
+
+             <p class="about__description">
+                Bonnie was an impuls, just like my own dog Atlas, but for my best friend Elina. With
+                that said, it was the best impuls buy she ever made. Bonnie is a true Husky, very
+                energetic, talkative and all over the place.<br><br>
+                When she first got to her forever-home she was a very scared and nervous little
+                pup, even scared around little Atlas. Now Bonnie is magestic, confident and
+                even though not the oldest, the leader of the pack.
+             </p>
+<br><br> <!-- Ja, jag använde <br> även fast du sa att jag inte skulle det :) -->
+             <div style="flex-shrink: 0">
+               <a href="/Pages/index.html" class="button">
+                 Back to Home <i class="ri-arrow-right-line"></i>
+              </a>
+           </div>
+
+          </div>
+
+          <div class="about__dog">
+             <span class="about__name">Born 1st April 2022</span>
+          </div>
+
+
        </div>
     </div>
  </section>
+       
+    </div>
+ </section>
+<!--DOG PROFILE PAGE - SLUT -->
 
-
-
-
-
-
-
-
-
-
-
-    
-  <!--==================== FOOTER ====================-->
+<!-- FOOTER - START -->
   <footer class="footer">
     <div class="footer__container container grid">
        <div class="footer__content grid">
@@ -145,7 +149,7 @@
              </div>
 
              <div>
-                <h3 class="footer__title">Information</h3>
+                <h3 class="footer__title">Support</h3>
 
                 <ul class="footer__links">
                    <li>
@@ -191,8 +195,9 @@
        </div>
     </div>
  </footer>
+<!-- FOOTER - SLUT -->
 
- <!--========== SCROLL UP ==========-->
+<!-- SCROLL UP ICON (IMPORTERAD FRN REMIXICONS) -->
  <a href="#" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-line"></i>
  </a>
@@ -200,7 +205,7 @@
  <!--=============== SCROLLREVEAL ===============-->
  <script src="assets/js/scrollreveal.min.js"></script>
 
- <!--=============== MAIN JS ===============-->
+<!-- JAVASCRIPT LÄNK -->
  <script src="/JavaScript/myScript.js"></script>
 </body>
 </html>

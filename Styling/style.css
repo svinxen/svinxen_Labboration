@@ -338,6 +338,8 @@
  .button:hover i {
    transform: translateX(.25rem);
  }
+
+
  
  /*=============== ABOUT - PACK ===============*/
  .pack__container {
@@ -467,8 +469,14 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   column-gap: .5rem;
+   column-gap: 0.5rem;
  }
+
+ .about__dog {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
  
  .about__perfil {
    width: 60px;
@@ -635,7 +643,7 @@
    }
  
    .pack__data,
-   .pack__data .section__title,{
+   .pack__data .section__title{
      text-align: initial;
    }
  
@@ -753,7 +761,7 @@
      font-size: var(--normal-font-size);
    }
  
-   .about__img {
+   .about__img{
      height: 600px;
    }
    .about__content {
@@ -765,7 +773,8 @@
      text-align: initial;
    }
  
-   .about__user {
+   .about__user,
+   .about__dog {
      justify-content: flex-end;
      align-self: flex-end;
      margin-bottom: 1.25rem;
