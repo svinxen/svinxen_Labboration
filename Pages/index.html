@@ -1,234 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CSS LÄNK -->
-<link rel="stylesheet" href="/Styling/style.css">
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="/Styling/Images/paw-favicon.png">
 
-<!-- REMIX ICONS-->
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-<!-- FAVVICON -->
-<link rel="icon" href="/Styling/Images/paw-favicon.png">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="/Styling/style.css">
 
-    <title>Me & My Dogs</title>
-</head>
-<body>
+      <title>Me & The Dogs</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="/Pages/index.html" class="nav__logo">Me & The Dogs</a>
 
-<!-- HEADER STARTAR-->    
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="/Pages/index.html" class="nav__logo">
-            Travel
-        </a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="/Pages/Atlas.html" class="av__link">Atlas</a>
-                </li>
-                
-                <li class="nav__item">
-                    <a href="/Pages/Bonnie.html" class="av__link">Bonnie</a>
-                </li>
+                  <li class="nav__item">
+                     <a href="#pack" class="nav__link">The Pack</a>
+                  </li>
 
-                <li class="nav__item">
-                    <a href="/Pages/Mia.html" class="av__link">Mia</a>
-                </li>
+                  <li class="nav__item">
+                     <a href="#traits" class="nav__link">Traits</a>
+                  </li>
 
-                <li class="nav__item">
-                    <a href="/Pages/Ann.html" class="av__link">About Me</a>
-                </li>
-            </ul>
-            <div class="nav__close" id="nav-close">
-                <i class="ri-close-fill"></i> <!-- Kryss icon från Remix Icons-->
-        </div>
-    </div>
-    <!-- Toggle -->
-    <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-menu-fill"></i> <!-- Meny icon från Remix Icons-->
-    </div>
-    </nav>
-</header>
-    
-<!-- MAIN -->
-<main class="main">
-        <!-- HOME -->
-    <section class="home section" id="home">
-        <img src="/Styling/Images/background-homepage.jpg" alt="home image" class="home__bg">
-        <div class="home__shadow"></div>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About Me</a>
+                  </li>
+               </ul>
 
-        <div class="home__container container grid">
-            <div class="home__data">
-                <h3 class="home_subtitle">
-                    Me & My Dogs
-                </h3>
-
-                <h1 class="home__title">
-                    My Dogs
-                </h1>
-
-                <p class="home__description">
-                    Något vettingt om mina hundar hej hej.
-                    Något vettingt om mina hundar hej hej.
-                    Något vettingt om mina hundar hej hej.
-                </p>
-
-                <a href="#" class="href button">
-                    Check them out <i class="ri-arrow-right-line"></i>
-                </a>
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
             </div>
 
-            <div class="home__cards grid">
-                <article class="home__card">
-                    <img src="/Styling/Images/Atlas.jpg" alt="home image" class="home__card-img">
-                    <h3 class="home__card-title">Atlas</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="/Styling/Images/Bonnie.jpg" alt="home image" class="home__card-img">
-                    <h3 class="home__card-title">Bonnie</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="/Styling/Images/Mia.png" alt="home image" class="home__card-img">
-                    <h3 class="home__card-title">Mia</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="/Styling/Images/MeAnn.png" alt="home image" class="home__card-img">
-                    <h3 class="home__card-title">Me, Ann</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-                
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
             </div>
-        </div>
-    </section>
+         </nav>
+      </header>
 
-<!-- ATLAS -->
-<section class="atlas" id="atlas">
-    <div class="atlas__container container grid">
-        <div class="atlas__data">
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="/Styling/Images/background-homepage.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+
+                  <h3 class="home__subtitle">Me &</h3>
+                  <h1 class="home__title">The <br>
+                     Dogs</h1>
+
+                  <p class="home__description">
+                    “If you don't own a dog, at least one, there is not necessarily anything wrong with you,
+                    but there may be something wrong with your life.” - Roger A. Caras
+                  </p>
+
+                  <a href="#pack" class="button">
+                     Check it out <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+
+               <div class="home__cards grid">
+                  <article class="home__card">
+                     <img src="/Styling/Images/Atlas.jpg" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Atlas</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="/Styling/Images/Bonnie.JPG" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Bonnie</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="/Styling/Images/Mia.png" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Mia</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT PACK ====================-->
+         <section class="pack section" id="pack">
+            <div class="pack__container container grid">
+               <div class="pack__data">
+                  <h2 class="section__title">
+                     About <br>
+                     The Pack
+                  </h2>
+
+                  <p class="pack__description">
+                     This pack currently contains one old introvertet Cavalier King Charles Spaniel/Chihuahua mix
+                     and a young Siberian Husky who recently got a little Siberian Husky puppy sister.
+                  </p>
+
+                  <a href="#about" class="button">
+                     About Me <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+
+               <div class="pack__image">
+                  <img src="/Styling/Images/noPicture.jpg" alt="pack image" class="pack__img">
+                  <div class="pack__shadow"></div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== POPULAR -  traits====================-->
+         <section class="traits section" id="traits">
             <h2 class="section__title">
-                About Atlas
+               This is them, <br>
+               with one word
             </h2>
 
-            <p class="atlas_description">
-                Här är massa info om Atlas som är super intressant.
-                Han är världens finaste hund om ni inte kan se det.
-            </p>
+            <div class="traits__container container grid">
+               <article class="traits__card">
+                  <div class="traits__image">
+                     <img src="/Styling/Images/Atlas3.JPG" alt="traits image" class="traits__img">
+                     <div class="traits__shadow"></div>
+                  </div>
+                  <h2 class="traits__title">Atlas</h2>
+                  <div class="traits__location">
+                    <i class="ri-zzz-line"></i>
+                     <span>Sleepy</span>
+                  </div>
+               </article>
 
-            <a href="#" class="button">
-                More about him <i class="ri-arrow-right-line"></i>
-            </a>
-        </div>
-        <div class="atlas__image">
-            <img src="/Styling/Images/Atlas.jpg" alt="atlas image" class="atlas__img">
-            <div class="atlas__shadow"></div>
-        </div>
-    </div>
-</section>
+               <article class="traits__card">
+                  <div class="traits__image">
+                     <img src="/Styling/Images/Bonnie2.JPG" alt="traits image" class="traits__img">
+                     <div class="traits__shadow"></div>
+                  </div>
+                  <h2 class="traits__title">Bonnie</h2>
+                  <div class="traits__location">
+                    <i class="ri-flashlight-line"></i>
+                     <span>Energetic</span>
+                  </div>
+               </article>
 
-<!-- BONNIE -->
-<section class="bonnie" id="bonnie">
-    <h2 class="section__title">
-        Bonnie
-    </h2>
+               <article class="traits__card">
+                  <div class="traits__image">
+                     <img src="/Styling/Images/noPicture.jpg" alt="traits image" class="traits__img">
+                     <div class="traits__shadow"></div>
+                  </div>
+                  <h2 class="traits__title">Mia</h2>
 
-    <div class="bonnie__container container grid">
-        <article class="bonnie__card">
-            <div class="bonnie__image">
-                <img src="/Styling/Images/Bonnie.JPG" alt="bonnie__img">
+                  <div class="traits__location">
+                    <i class="ri-speak-line"></i>
+                     <span>Talkative</span>
+                  </div>
+               </article>
             </div>
-        </article>
-    </div>
-</section>
+         </section>
+         
+         <!--==================== EXPLORE -  ABOUT ME====================-->
+         <section class="about section" id="about">
+            <div class="about__container">
+               <div class="about__image">
+                  <img src="/Styling/Images/background-me.jpg" alt="about image" class="about__img">
+                  <div class="about__shadow"></div>
+               </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer__container container grid">
-        <div class="footer__content grid">
-            <div>
-                <a href="/Styling/Images/thanks.png" class="footer__logo"></a>
-                <h3 class="footer__title">Tack!</h3>
-                <p class="footer__description">Thanks for visiting my website.</p>
+               <div class="about__content container grid">
+                  <div class="about__data">
+                     <h2 class="about__title">
+                        About me <br> 
+                        the creator & dog mom
+                     </h2>
+   
+                     <p class="about__description">
+                        My name is Ann and I am a 31yo nerd who loves video games and fun tech gadgets.
+                        If I'm not isolated infront of my PC drowned into a virtual world I love
+                        spending time in nature and with animals, the dogs especially. Nothing gives me
+                        more peace and joy than to watch them run around in the forest.
+                     </p>
+                  </div>
+
+                  <div class="about__user">
+                     <img src="/Styling/Images/Me.jpg" alt="about image" class="about__perfil">
+                     <span class="about__name">Ann "Svinxen" Axelsson</span>
+                  </div>
+               </div>
             </div>
+         </section>
+         
         
-            <div class="footer__data grid">
 
-                <div>
-                    <h3 class="footer__title">Hundarna</h3>
-                    <ul class="footer__links">
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <div>
+                  <a href="#" class="footer__logo">Me & The Dogs</a>
+
+                  <p class="footer__description">
+                    <button class="button" onclick="alert('Thank you for checking out my website!')">Thank you!
+                        <i class="ri-open-arm-line"></i> </button>
+                  </p>
+
+               </div>
+
+               <div class="footer__data grid">
+                  <div>
+                     <h3 class="footer__title">The Pack</h3>
+
+                     <ul class="footer__links">
                         <li>
-                            <a href="#" class="footer__link">Atlas</a>
+                           <a href="/Pages/Atlas.html" class="footer__link">Atlas</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link">Bonnie</a>
+                           <a href="/Pages/Bonnie.html" class="footer__link">Bonnie</a>
+                        </li>
+                        
+                        <li>
+                           <a href="/Pages/Mia.html" class="footer__link">Mia</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title">Contact</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#" class="footer__link">E-mail</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link">Mia</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Länkar</h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Facebook</a>
+                           <a href="#" class="footer__link">Phone</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link">Instagram</a>
+                           <a href="#" class="footer__link">Address</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title">Information</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="/Pages/Ann.html" class="footer__link">Ann</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link">Discord</a>
+                           <a href="#" class="footer__link">Whatever</a>
                         </li>
-                    </ul>
-                </div>
 
+                        <li>
+                           <a href="#" class="footer__link">Whatever</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-        </div>
 
-        <div class="footer__group">
-            <div class="footer__social">
-                <a href="" target="_blank" class="footer__social-link">
-                    <i class="ri-instagram-fill"></i>
-                </a>
+            
 
-                <a href="" target="_blank" class="footer__social-link">
-                    <i class="ri-facebook-fill"></i>
-                </a>
+            <div class="footer__group">
+               <div class="footer__social">
+                  <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                     <i class="ri-facebook-line"></i>
+                  </a>
 
-                <a href="" target="_blank" class="footer__social-link">
-                    <i class="ri-twitter-x-fill"></i>
-                </a>
+                  <a href="https://www.instagram.com/aaxelssons" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
 
-                <a href="" target="_blank" class="footer__social-link">
-                    <i class="ri-discord-fill"></i>
-                </a>
+                  <a href="https://twitter.com/lillsvinx" target="_blank" class="footer__social-link">
+                     <i class="ri-twitter-line"></i>
+                  </a>
+
+                  <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-youtube-line"></i>
+                  </a>
+               </div>
+
+               <span class="footer__copy">
+                  &#169; I don't know how Copyright works, but I would put it here
+               </span>
             </div>
+         </div>
+      </footer>
 
-            <span class="footer__copy">
-                &#169; If i knew how Copyright worked, it would be displayed here.
-            </span>
-        </div>
-    </div>
-</footer>
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
 
-
-</main>
-
-<!-- JAVASCRIPT LÄNK -->    
-<script src="/JavaScript/myScript.js"></script>
-</body>
+      <!--=============== MAIN JS ===============-->
+      <script src="/JavaScript/myScript.js"></script>
+   </body>
 </html>

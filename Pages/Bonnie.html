@@ -1,15 +1,206 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonnie</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/Styling/Images/paw-favicon.png">
+  
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/Styling/style.css">
+  
+        <title>Me & The Dogs - Bonnie</title>
+     </head>
+     <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+           <nav class="nav container">
+              <a href="/Pages/Bonnie.html" class="nav__logo">Bonnie</a>
+  
+              <div class="nav__menu" id="nav-menu">
+                 <ul class="nav__list">
+                    <li class="nav__item">
+                       <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+  
+                    <li class="nav__item">
+                       <a href="#pack" class="nav__link">The Pack</a>
+                    </li>
+  
+                    <li class="nav__item">
+                       <a href="#traits" class="nav__link">Traits</a>
+                    </li>
+  
+                    <li class="nav__item">
+                       <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                 </ul>
+  
+                 <!-- Close button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                 </div>
+              </div>
+  
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </nav>
+        </header>
+  
+        <!--==================== MAIN ====================-->
+        <main class="main">
     
 
 
+  <!--==================== ABOUT PACK ====================-->
+  <section class="pack section" id="pack">
+    <div class="pack__container container grid">
+       <div class="pack__data">
+          <h2 class="section__title">BONNIE</h2>
+
+          <p class="pack__description">
+             This pack currently contains one old introvertet Cavalier King Charles Spaniel/Chihuahua mix
+             and a young Siberian Husky who recently got a little Siberian Husky puppy sister.
+          </p>
+
+          <a href="/Pages/index.html" class="button">
+             Back <i class="ri-arrow-right-line"></i>
+          </a>
+       </div>
+
+       <div class="pack__image">
+          <img src="/Styling/Images/noPicture.jpg" alt="pack image" class="pack__img">
+          <div class="pack__shadow"></div>
+       </div>
+    </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
     
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container grid">
+       <div class="footer__content grid">
+          <div>
+             <a href="#" class="footer__logo">Me & The Dogs</a>
+
+             <p class="footer__description">
+               <button class="button" onclick="alert('Thank you for checking out my website!')">Thank you!
+                   <i class="ri-open-arm-line"></i> </button>
+             </p>
+
+          </div>
+
+          <div class="footer__data grid">
+             <div>
+                <h3 class="footer__title">The Pack</h3>
+
+                <ul class="footer__links">
+                   <li>
+                      <a href="/Pages/Atlas.html" class="footer__link">Atlas</a>
+                   </li>
+
+                   <li>
+                      <a href="/Pages/Bonnie.html" class="footer__link">Bonnie</a>
+                   </li>
+                   
+                   <li>
+                      <a href="/Pages/Mia.html" class="footer__link">Mia</a>
+                   </li>
+                </ul>
+             </div>
+
+             <div>
+                <h3 class="footer__title">Contact</h3>
+
+                <ul class="footer__links">
+                   <li>
+                      <a href="#" class="footer__link">E-mail</a>
+                   </li>
+
+                   <li>
+                      <a href="#" class="footer__link">Phone</a>
+                   </li>
+
+                   <li>
+                      <a href="#" class="footer__link">Address</a>
+                   </li>
+                </ul>
+             </div>
+
+             <div>
+                <h3 class="footer__title">Information</h3>
+
+                <ul class="footer__links">
+                   <li>
+                      <a href="/Pages/Ann.html" class="footer__link">Ann</a>
+                   </li>
+
+                   <li>
+                      <a href="#" class="footer__link">Whatever</a>
+                   </li>
+
+                   <li>
+                      <a href="#" class="footer__link">Whatever</a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+
+       
+
+       <div class="footer__group">
+          <div class="footer__social">
+             <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                <i class="ri-facebook-line"></i>
+             </a>
+
+             <a href="https://www.instagram.com/aaxelssons" target="_blank" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+             </a>
+
+             <a href="https://twitter.com/lillsvinx" target="_blank" class="footer__social-link">
+                <i class="ri-twitter-line"></i>
+             </a>
+
+             <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                <i class="ri-youtube-line"></i>
+             </a>
+          </div>
+
+          <span class="footer__copy">
+             &#169; I don't know how Copyright works, but I would put it here
+          </span>
+       </div>
+    </div>
+ </footer>
+
+ <!--========== SCROLL UP ==========-->
+ <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+ </a>
+
+ <!--=============== SCROLLREVEAL ===============-->
+ <script src="assets/js/scrollreveal.min.js"></script>
+
+ <!--=============== MAIN JS ===============-->
+ <script src="/JavaScript/myScript.js"></script>
 </body>
 </html>
