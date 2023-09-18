@@ -10,6 +10,7 @@
    --title-color: hsl(0, 0%, 95%);
    --text-color: hsl(0, 0%, 70%);
    --text-color-light: hsl(0, 0%, 60%);
+   --text-color-dark: hsl(0, 0%, 0%);
    --body-color: hsl(0, 0%, 0%);
    --container-color: hsl(0, 0%, 8%);
    --shadow-gradient: linear-gradient(180deg, 
@@ -353,6 +354,11 @@
  .pack__description {
    margin-bottom: 2rem;
  }
+
+ .pack__description-me {
+    margin-bottom: 2rem;
+    font-style: var(--text-color-dark);
+  } 
  
  .pack__image {
    position: relative;
@@ -463,7 +469,7 @@
    padding-bottom: 4rem;
    text-align: center;
    row-gap: 2.5rem;
-    }
+}
  
  .about__user {
    display: inline-flex;
