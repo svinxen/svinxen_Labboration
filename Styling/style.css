@@ -1,12 +1,12 @@
- /*=============== GOOGLE FONTS ===============*/
+ 
+ /* IMPORTERADE GOOGLE FONTS*/
  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
- /*=============== VARIABLES CSS ===============*/
+ /* CSS VARIABLER*/
  :root {
    --header-height: 3.5rem;
  
-   /*========== Colors ==========*/
-   /*Color mode HSL(hue, saturation, lightness)*/
+   /* FÄRGER - HSL(hue, saturation, lightness)*/
    --title-color: hsl(0, 0%, 95%);
    --text-color: hsl(0, 0%, 70%);
    --text-color-light: hsl(0, 0%, 60%);
@@ -17,8 +17,7 @@
                      hsla(0, 0%, 0%, 0) 50%, 
                      hsl(0, 0%, 0%) 125%);
  
-   /*========== Font and typography ==========*/
-   /*.5rem = 8px | 1rem = 16px ...*/
+   /* FONTS OCH STORLEKAR (0.5rem = 8px / 1rem = 16px) */
    --body-font: "Poppins", sans-serif;
    --second-font: "Montserrat", sans-serif;
    --biggest-font-size: 2.75rem;
@@ -29,17 +28,17 @@
    --small-font-size: .813rem;
    --smaller-font-size: .75rem;
  
-   /*========== Font weight ==========*/
+   /* FONT TJOCKLECK*/
    --font-regular: 400;
    --font-medium: 500;
    --font-semi-bold: 600;
  
-   /*========== z index ==========*/
+   /* Z INDEX - OVERLAPPING AV ELEMENT */
    --z-tooltip: 10;
    --z-fixed: 100;
  }
  
- /*========== Responsive typography ==========*/
+ /* RESPONSIVE TEXT*/
  @media screen and (min-width: 1152px) {
    :root {
      --biggest-font-size: 5.5rem;
@@ -52,7 +51,7 @@
    }
  }
  
- /*=============== BASE ===============*/
+ /* BASE */
  * {
    box-sizing: border-box;
    padding: 0;
@@ -101,7 +100,7 @@
    height: auto;
  }
  
- /*=============== REUSABLE CSS CLASSES ===============*/
+ /* CSS CLASSES*/
  .container {
    max-width: 1120px;
    margin-inline: 1.5rem;
@@ -121,12 +120,8 @@
    font-size: var(--h1-font-size);
    margin-bottom: 1.5rem;
  }
- 
- .main {
-   overflow: hidden; /* For animation ScrollReveal */
- }
- 
- /*=============== HEADER & NAV ===============*/
+  
+ /* HEADER & NAV */
  .header {
    position: fixed;
    width: 100%;
@@ -157,7 +152,7 @@
    cursor: pointer;
  }
  
- /* Navigation for mobile devices */
+ /* NAV FOR SMALL SCREENS */
  @media screen and (max-width: 1023px) {
    .nav__menu {
      position: fixed;
@@ -207,12 +202,12 @@
    right: 1.5rem;
  }
  
- /* Show menu */
+ /* SHOW MENU */
  .show-menu {
    top: 0;
  }
  
- /* Add blur to header */
+ /* ADDING HEADER BLUR EFFECT */
  .blur-header::after {
    content: "";
    position: absolute;
@@ -226,12 +221,12 @@
    z-index: -1;
  }
  
- /* Active link */
+ /* ACTIVE LINK (POSITION PÅ SIDAN) */
  .active-link::after {
    width: 70%;
  }
  
- /*=============== HOME ===============*/
+ /* HOME PAGE */
  .home {
    position: relative;
  }
@@ -316,7 +311,7 @@
    transform: scale(1.2);
  }
  
- /*=============== BUTTON ===============*/
+ /* BUTTON - LÄNK KNAPP*/
  .button {
    background-color: hsla(0, 0%, 100%, .2);
    padding: 1.25rem 1.5rem;
@@ -342,7 +337,7 @@
 
 
  
- /*=============== ABOUT - PACK ===============*/
+ /* HOME PAGE - PACK */
  .pack__container {
    row-gap: 3rem;
  }
@@ -379,7 +374,7 @@
    transform: scale(1.2);
  }
  
- /*=============== POPULAR - TRAITS ===============*/
+ /* HOME PAGEE - TRAITS */
  .traits__container {
    padding-top: 1.5rem;
    grid-template-columns: 240px;
@@ -428,7 +423,7 @@
    font-size: 1rem;
  }
  
- /*=============== EXPLORE - ABOUT ME ===============*/
+ /* HOME PAGE - ABOUT ME*/
  .about {
    position: relative;
  }
@@ -490,7 +485,7 @@
  }
  
  
- /*=============== FOOTER ===============*/
+ /* FOOTER */
  .footer {
    padding-block: 2.5rem;
    background-color: var(--container-color);
@@ -566,7 +561,7 @@
    text-align: center;
  }
  
- /*=============== SCROLL BAR ===============*/
+ /* SCROLL BAR */
  ::-webkit-scrollbar {
    width: .6rem;
    border-radius: .5rem;
@@ -582,7 +577,7 @@
    background-color: hsl(0, 0%, 30%);
  }
  
- /*=============== SCROLL UP ===============*/
+ /* SCROLL UP */
  .scrollup {
    position: fixed;
    right: 1rem;
@@ -602,13 +597,14 @@
    transform: translateY(-.25rem);
  }
  
- /* Show Scroll Up */
+ /* SHOW SCROLL UP */
  .show-scroll {
    bottom: 3rem;
  }
  
- /*=============== BREAKPOINTS ===============*/
- /* For small devices */
+ /* BREAK POINTS - NÄR SIDAN ÄNDRAR LAYOUT EFTER SKÄRMSTORLEK*/
+
+ /* FOR SMALL SCREENS */
  @media screen and (max-width: 340px) {
    .container {
      margin-inline: 1rem;
@@ -619,7 +615,7 @@
    }
  }
  
- /* For medium devices */
+ /* FOR MEDIUM SCREENS */
  @media screen and (min-width: 576px) {
    .home__container,
    .pack__container,
@@ -669,7 +665,7 @@
    }
  }
  
- /* For large devices */
+ /* FFOR LARGE SCREENS */
  @media screen and (min-width: 1023px) {
    .nav__close, 
    .nav__toggle {

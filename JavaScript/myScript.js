@@ -1,9 +1,9 @@
-/*=============== SHOW MENU ===============*/
+/* SHOW MENU*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
+/* SHOW MENU */
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
@@ -11,7 +11,7 @@ if(navToggle){
     })
 }
 
-/*===== MENU HIDDEN =====*/
+/* HIDE MENU */
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () =>{
@@ -19,7 +19,7 @@ if(navClose){
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/* REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
@@ -29,7 +29,7 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== ADD BLUR TO HEADER ===============*/
+/* HEADER BLUR EFFECT */
 const blurHeader = () =>{
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
@@ -38,7 +38,7 @@ const blurHeader = () =>{
 }
 window.addEventListener('scroll', blurHeader)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/* SHOW SCROLL UP */ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -47,7 +47,7 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/* SCROLL SECTIONS ACTIVE LINK */
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
@@ -68,17 +68,3 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 3000,
-    delay: 400,
-    // reset: true // Animations repeat
-})
-
-sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-sr.reveal(`.home__card`, {delay: 600, distance: '100px', interval: 100})
-sr.reveal(`.about__data, .join__image`, {origin: 'right'})
-sr.reveal(`.about__image, .join__data`, {origin: 'left'})
-sr.reveal(`.popular__card`, {interval: 200})
