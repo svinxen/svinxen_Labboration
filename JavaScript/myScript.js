@@ -4,7 +4,7 @@ const navMenu = document.getElementById('nav-menu'),
       navClose = document.getElementById('nav-close')
 
 /* SHOW MENU */
-/* Validate if constant exists */
+
 if(navToggle){
     navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
@@ -12,7 +12,7 @@ if(navToggle){
 }
 
 /* HIDE MENU */
-/* Validate if constant exists */
+
 if(navClose){
     navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
@@ -24,7 +24,7 @@ const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    /* När man tryckt på en länk så försvinner menyn */
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /* HEADER BLUR EFFECT */
 const blurHeader = () =>{
     const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+    /* Om man scrollar mer än 50% utav headerns höjd så läggs "blur-header" classen till*/
     this.scrollY >= 50 ? header.classList.add('blur-header') 
                        : header.classList.remove('blur-header')
 }
@@ -41,13 +41,13 @@ window.addEventListener('scroll', blurHeader)
 /* SHOW SCROLL UP */ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* SCROLL SECTIONS - ACTIVE LINK */
+/* Styr den lilla baren i menyn, visar vilken section man är på i dokumentet */
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
